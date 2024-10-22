@@ -69,7 +69,7 @@ LANGUAGE plpgsql
 AS
 $$
     DECLARE 
-    test_var int;
+    test_var int; 
     BEGIN
         SELECT employee_id INTO test_var FROM employees WHERE employee_id = p_emp_id;
         DELETE FROM employees WHERE employee_id = test_var;
